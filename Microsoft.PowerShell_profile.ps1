@@ -14,6 +14,7 @@ Set-Alias grep rg
 Set-Alias nvide neovide
 Set-Alias ex explorer
 Set-Alias lg lazygit
+Set-Alias c clear
 
 function erb {
   Clear-RecycleBin -Force
