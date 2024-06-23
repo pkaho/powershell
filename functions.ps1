@@ -1,7 +1,25 @@
+# <<<<<<<<<<<< Change dir <<<<<<<<<<<<
+# eza
+function l  { eza -1 }
+function la { eza -a }
+function ld { eza -D }
+function lf { eza -f }
+function ll { eza -l -h }
+function lr { eza -l -r -h }
+function ls { eza --no-quotes }
+function lab { eza --absolute }
+function tree { eza -T }
+
+function cd.. { cd .. }
+function .. { cd .. }
+function ... { cd ../.. }
+# >>>>>>>>>>>> Change dir >>>>>>>>>>>>
+
 # komorebic start/stop
 function kst { komorebic start }
 function ksp { komorebic stop }
 
+# >>>>>>>>>>>> nvim >>>>>>>>>>>>
 function cvim {
   nvim --clean -u $HOME/AppData/Local/nvim/mini-init.lua $args
 }
@@ -31,7 +49,9 @@ function fvim {
   }
   nvim $selected_file
 }
+# <<<<<<<<<<<< nvim <<<<<<<<<<<<
 
+# >>>>>>>>>>>> wezterm >>>>>>>>>>>>
 # wezterm imgcat
 function imgcat {
   wezterm imgcat $args
@@ -51,6 +71,7 @@ function Invoke-Starship-PreCommand {
     }
     $host.ui.Write($prompt)
 }
+# <<<<<<<<<<<< wezterm <<<<<<<<<<<<
 
 # ability to change the current working directory when exiting Yazi
 function yy {
