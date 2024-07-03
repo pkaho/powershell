@@ -26,3 +26,7 @@ function Lock {
 function rm {
   Remove-Item $args -Recurse -Force
 }
+
+function ckh {
+  Get-PSReadLineOption | rg HistorySavePath
+}
