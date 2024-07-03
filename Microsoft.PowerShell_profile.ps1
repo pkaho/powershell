@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/craver.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/pure.omp.json" | Invoke-Expression
 #Invoke-Expression (&starship init powershell) # use starship
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Set-PSReadLineKeyHandler -Key "Ctrl+d" -Function MenuComplete # press ^+d show completion
