@@ -15,6 +15,12 @@ Set-Alias open explorer
 Set-Alias lg lazygit
 Set-Alias c clear
 
+if ($host.Name -eq "ConsoleHost")
+{
+  Import-Module PSReadLine
+  Set-PSReadLineOption -EditMode Emacs
+}
+
 function erb {
   Clear-RecycleBin -Force
 }
